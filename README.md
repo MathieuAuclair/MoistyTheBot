@@ -2,41 +2,26 @@
 this project is a trial of using discord.js API, firebase hosting service and an attempt to create a deep learning AI that will respond users with sorted answer
 
 ### TODO
-[x] create a discord-bot
-
-[] find a better name for the bot
-
-[] make a refactoring
-
-[] upgrade database
-
-[] create a asking algorithm based on question
-
-[] add learning function
-
-[] create unit test
-
-[] add a dictionary
-
-[] make server SQL Injection proof
-
-[] add custom command
-
-[] add a play music feature
-
-[] export database to firebase
-
-[] let user fill the database with stupid content
+#[checkbox:checked] create a discord-bot
+#[checkbox:unchecked] find a better name for the bot
+#[checkbox:unchecked] make a refactoring
+#[checkbox:unchecked] upgrade database
+#[checkbox:unchecked] create a asking algorithm based on question
+#[checkbox:unchecked] add learning function
+#[checkbox:unchecked] create unit test
+#[checkbox:unchecked] add a dictionary
+#[checkbox:unchecked] make server SQL Injection proof
+#[checkbox:unchecked] add custom command
+#[checkbox:unchecked] add a play music feature
+#[checkbox:unchecked] export database to firebase
+#[checkbox:unchecked] let user fill the database with stupid content
 
 
 ### OPTIONNAL
-[] bring the bot on other social network
-
-[] create a music playlist algorithm
-
-[] create a server management (for discord)
-
-[] create sorting GUI for better management
+#[checkbox:unchecked] bring the bot on other social network
+#[checkbox:unchecked] create a music playlist algorithm
+#[checkbox:unchecked] create a server management (for discord)
+#[checkbox:unchecked] create sorting GUI for better management
 
 #### HELP
 if you're interrested to help in this project, just send me a message by email, and i'll add you to the project! 
