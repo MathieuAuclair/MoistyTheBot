@@ -3,24 +3,39 @@ this project is a trial of using discord.js API, firebase hosting service and an
 
 ### TODO
 [x] create a discord-bot
+
 [] find a better name for the bot
+
 [] make a refactoring
+
 [] upgrade database
+
 [] create a asking algorithm based on question
+
 [] add learning function
+
 [] create unit test
+
 [] add a dictionary
+
 [] make server SQL Injection proof
+
 [] add custom command
+
 [] add a play music feature
+
 [] export database to firebase
+
 [] let user fill the database with stupid content
 
 
 ### OPTIONNAL
 [] bring the bot on other social network
+
 [] create a music playlist algorithm
+
 [] create a server management (for discord)
+
 [] create sorting GUI for better management
 
 #### HELP
@@ -28,7 +43,9 @@ if you're interrested to help in this project, just send me a message by email, 
 
 ### PRE-INSTALL
 1- create yourself a bot at https://discordapp.com/developers/applications/me
+
 2- manage you bot permission with bot ID at https://discordapi.com/permissions.html
+
 3- invite the bot in a server that you are manager
 
 ### INSTALL (LOCALHOST)
@@ -44,7 +61,9 @@ then the bot should be online as long as the nodejs server is running, (note) it
 
 ### INVITE MY BOT (NO INSTALLATION)
 Client ID: 321041087689129994
+
 manage bot permission then invite the bot in your server at https://discordapi.com/permissions.html
+
 (note) you must be server manager to be able to invite bot
 
 (important) my bot is not always online since it's currently in developpement
