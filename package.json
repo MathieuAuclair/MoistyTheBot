@@ -4,7 +4,8 @@
   "description": "a simple discord bot with a database",
   "main": "server.js",
   "dependencies": {
-    "discord.js": "^11.1.0"
+    "discord.js": "^11.1.0",
+    "mysql":"^2.13.0"
   },
   "devDependencies": {},
   "scripts": {
