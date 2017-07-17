@@ -55,4 +55,20 @@ function learnNewQuestion(knowledge, msg){//json entry
 	}
 }
 
+
 client.login(token);
+
+function checkValidId(serverId){
+	connection.query("SELECT * FROM CLIENT_SERVER", function(err, res){
+		if(err){
+			throw err;
+		}
+		else if(res.length == 1){
+			return true;
+		}
+		else{
+			console.log("acces refused! ID: " + serverId);
+			return false;
+		}
+	});
+}
