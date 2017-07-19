@@ -30,7 +30,7 @@ client.on('message', msg => {
 
 function createSafeSqlQuestion(question){
 	var safeQuestion = question.substring(5, question.length);
-	safeQuestion 
+	//need to create regex
 	console.log(safeQuestion);
 	return safeQuestion;
 }
@@ -58,6 +58,7 @@ function learnNewQuestion(knowledge, msg){//json entry
 	}
 }
 //there is too much repetition, need optimization
+//check to create delegate function, and maybe node library
 function removeFromKnowledge(question, msg){
 	connection.query("SELECT * FROM KNOWLEDGE WHERE QUESTION = '" + question + "';", function(err, result){
 		if(result.length === 1)
@@ -92,3 +93,8 @@ function checkValidId(serverId){
 		}
 	});
 }
+
+
+//create a visual GUI for management
+
+//create a virtual shop for liscence
