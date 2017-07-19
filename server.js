@@ -23,6 +23,9 @@ client.on('message', msg => {
 	else if(action === '.ask'){
 		findAnswerInMemory(question, msg);
 	}
+	else if(action === ".rmv"){
+		removeFromKnowledge(question);
+	}
 });
 
 function createSafeSqlQuestion(question){
@@ -54,10 +57,27 @@ function learnNewQuestion(knowledge, msg){//json entry
 		msg.reply("sweet, I'll remeber that!");
 	}
 }
-
+//there is too much repetition, need optimization
+function removeFromKnowledge(question, msg){
+	connection.query("SELECT * FROM KNOWLEDGE WHERE QUESTION = '" + question + "';", function(err, result){
+		if(result.length === 1)
+		connection.query("DELETE FROM KNOWLEDGE WHERE QUESTION = '" + question + "';", function(){
+			if(err){
+				throw err;
+			}
+			else{
+				msg.reply("thanks, i'll forget this question!");
+			}
+		});
+		else{
+			msg.reply("Sorry this question don't exist...");
+		}
+	});
+}
 
 client.login(token);
 
+//need to check with api
 function checkValidId(serverId){
 	connection.query("SELECT * FROM CLIENT_SERVER", function(err, res){
 		if(err){
