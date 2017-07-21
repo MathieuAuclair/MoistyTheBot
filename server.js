@@ -2,13 +2,8 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const token = '****************************';
 const mysql = require("mysql");
-
-var connection = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	password : '*******',
-	database : 'DISCORD'
-});
+const membership = require("./membership.js");
+const connection = require("./connection.js");
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
@@ -78,21 +73,6 @@ function removeFromKnowledge(question, msg){
 
 client.login(token);
 
-//need to check with api
-function checkValidId(serverId){
-	connection.query("SELECT * FROM CLIENT_SERVER", function(err, res){
-		if(err){
-			throw err;
-		}
-		else if(res.length == 1){
-			return true;
-		}
-		else{
-			console.log("acces refused! ID: " + serverId);
-			return false;
-		}
-	});
-}
 
 
 //create a visual GUI for management

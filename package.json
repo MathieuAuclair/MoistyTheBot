@@ -5,7 +5,8 @@
   "main": "server.js",
   "dependencies": {
     "discord.js": "^11.1.0",
-    "mysql":"^2.13.0"
+    "mysql":"^2.13.0",
+    "http" :"*"
   },
   "devDependencies": {},
   "scripts": {
