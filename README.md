@@ -54,3 +54,6 @@ manage bot permission then invite the bot in your server at https://discordapi.c
 (important) my bot is not always online since it's currently in developpement
 
 
+### Work in progress
+
+https://www.patreon.com/MoistyTheBot
