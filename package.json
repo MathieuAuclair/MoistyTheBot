@@ -5,8 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "discord.js": "^11.1.0",
-    "mysql":"^2.13.0",
-    "http" :"*"
+    "dotenv": "^4.0.0",
+    "http": "*",
+    "mysql": "^2.13.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,9 +1,17 @@
+require('dotenv').config();
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const token = '****************************';
+const token = process.env.MOISTY;
 const mysql = require("mysql");
-const membership = require("./membership.js");
-const connection = require("./connection.js");
+
+console.log(process.env.MOISTY);
+
+var connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+	password : process.env.PASSWORD,
+	database : 'DISCORD'
+});
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);

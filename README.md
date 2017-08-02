@@ -1,30 +1,36 @@
 ## Discord-Bot
-this project is a trial of using discord.js API, firebase hosting service and an attempt to create a deep learning AI that will respond users with sorted answer
+this project is a trial of using discord.js API, I want to create a useful bot that can really help with server management, and include special feature to improve discord use.
+
 
 ### TODO
-* create a discord-bot
-* find a better name for the bot
+* fix SQL Injection problem
+* include a deep learning classifier
 * make a refactoring
-* upgrade database
-* create a asking algorithm based on question
-* add learning function
+* upgrade the database
 * create unit test
-* add a dictionary
-* make server SQL Injection proof
-* add custom command
+* add an event manager for gamejam
+* set a trophy and reward system
+* create a forum manager
+* include user moist profile
+* make an idea box for users
 * add a play music feature
-* export database to firebase
+* set a product key manager with patreon
 * let user fill the database with stupid content
 
 
-### OPTIONNAL
+### SECONDARY
 * bring the bot on other social network
+* set MC Moisty as Server DJ
 * create a music playlist algorithm
 * create a server management (for discord)
 * create sorting GUI for better management
 
 #### HELP
 if you're interrested to help in this project, just send me a message by email, and i'll add you to the project! 
+
+
+
+
 
 ### PRE-INSTALL
 1- create yourself a bot at https://discordapp.com/developers/applications/me
@@ -43,6 +49,9 @@ $ exit
 $ node server.js
 ~~~
 then the bot should be online as long as the nodejs server is running, (note) it's really important to hide you bot token or someone could mess with you discord server by using the bot on his own nodejs server
+
+
+
 
 ### INVITE MY BOT (NO INSTALLATION)
 Client ID: 321041087689129994
