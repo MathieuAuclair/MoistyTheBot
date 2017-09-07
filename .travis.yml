@@ -1,19 +1,16 @@
 # After changing this file, check it on:
 #   http://lint.travis-ci.org/
 language: node_js
-
-# Is `sudo` required? If not, jobs are run on container-based infrastructure.
-sudo: false
-
 node_js:
-  # Node.js
-  - 'node'
   - '8'
-install: npm install
-script: npm start
+install: 
+  - npm install
+script: 
+  - npm start 
 notifications:
         email:
                 recipients:
                 - mathiass12@hotmail.com
                         on_success: always
                         on_failure: always
+
