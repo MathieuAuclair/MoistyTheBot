@@ -9,11 +9,11 @@ node_js:
   # Node.js
   - 'node'
   - '8'
-
-before_install:
-  # Update the npm client. Older clients cannot, e.g., handle scoped modules.
-  - npm update -g npm
-
-after_script:
-  - npm run coverage
-
+install: npm install
+script: npm test
+notifications:
+email:
+recipients:
+- mathiass12@hotmail.com
+on_success: always
+on_failure: always
