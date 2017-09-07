@@ -1,13 +1,15 @@
 {
-  "name": "discord-bot",
+  "name": "moisty-the-bot",
   "version": "1.0.0",
   "description": "a simple discord bot with a database",
   "main": "server.js",
   "dependencies": {
+    "assert": "^1.4.1",
     "discord.js": "^11.1.0",
     "dotenv": "^4.0.0",
     "http": "*",
-    "mysql": "^2.13.0"
+    "mysql": "^2.13.0",
+    "sqlstring": "^2.2.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,3 +1,4 @@
+const mysql = require("mysql");
 
 function sqlSetup(){
 	this.mysql = require("mysql"),
@@ -8,4 +9,4 @@ function sqlSetup(){
 		database : 'DISCORD'
 	})
 }
-module.exports = sqlSetup;
+module.exports = new sqlSetup();

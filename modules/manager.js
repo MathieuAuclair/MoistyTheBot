@@ -2,9 +2,15 @@
  *	this is the manager to connect all the script
  *	together, it get the work done.
 */
+const sqlSetup = require("./sqlSetup.js");
+const sqlSafeString = require("./sqlString.js");
 
 function Manager(){
-	this.getSafeSqlString = require("./sqlString.js");
-	this.sql = require("sqlSetup.js");
+	this.sqlString = function(query){
+		return sqlSafeString(query);
+	},
+	this.sql = function(){
+		return sqlSetup;
+	}
 }
-module.exports = Manager;
+module.exports = new Manager();

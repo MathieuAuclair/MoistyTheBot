@@ -1,6 +1,8 @@
-function sqlSafeString(query){
+const sql = require('sqlstring');
 
-	//just for now
-	return query;
+function getSqlSafeString(query){
+	//format query to fit in MySQL
+	var format = sql.escape(query);	
+	return format;
 }
-module.exports = sqlSafeString;
+module.exports = getSqlSafeString;
