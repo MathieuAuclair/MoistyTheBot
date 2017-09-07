@@ -11,7 +11,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test/test.js",
+    "build": "npm install",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
