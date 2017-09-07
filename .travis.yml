@@ -10,10 +10,10 @@ node_js:
   - 'node'
   - '8'
 install: npm install
-script: npm test
+script: npm start
 notifications:
-email:
-recipients:
-- mathiass12@hotmail.com
-on_success: always
-on_failure: always
+        email:
+                recipients:
+                - mathiass12@hotmail.com
+                        on_success: always
+                        on_failure: always
