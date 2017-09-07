@@ -3,6 +3,12 @@
 language: node_js
 node_js:
   - '8'
-install: npm install
+service:
+  - mysql
+install: 
+  - npm install
+  - mysql -u root -p --default-character-set=utf8 DISCORD < database.sql
+  - mysql -u root -p --default-character-set=utf8 DISCORD < query/insert.sql
+  - mysql -u root -p --default-character-set=utf8 DISCORD < query/select.sql
 script: node test/test.js
 
