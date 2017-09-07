@@ -1,1 +1,5 @@
-.env
+# password file
+*.env
+
+# vim
+*.swp
