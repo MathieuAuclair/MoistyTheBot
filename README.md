@@ -1,29 +1,22 @@
+[![Build Status](https://travis-ci.org/MathieuAuclair/MoistyTheBot.svg)](https://travis-ci.org/MathieuAuclair/MoistyTheBot)
+
 ## Discord-Bot
 this project is a trial of using discord.js API, I want to create a useful bot that can really help with server management, and include special feature to improve discord use.
 
 
 ### TODO
-* fix SQL Injection problem
-* include a deep learning classifier
-* make a refactoring
-* upgrade the database
-* create unit test
-* add an event manager for gamejam
-* set a trophy and reward system
-* create a forum manager
-* include user moist profile
-* make an idea box for users
-* add a play music feature
-* set a product key manager with patreon
-* let user fill the database with stupid content
+- [x] Make it work!
+- [x] Upgrade database structure
+- [ ] Create view in database
+- [ ] Include Unit test
+- [ ] Review server structure
+- [ ] Add Regex for security
+- [ ] Try remove security leak
 
 
 ### SECONDARY
-* bring the bot on other social network
-* set MC Moisty as Server DJ
-* create a music playlist algorithm
-* create a server management (for discord)
-* create sorting GUI for better management
+- [ ] Add a deep learning
+- [ ] Add new features!
 
 #### HELP
 if you're interrested to help in this project, just send me a message by email, and i'll add you to the project! 
