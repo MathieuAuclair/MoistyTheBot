@@ -7,7 +7,7 @@ this project is a trial of using discord.js API, I want to create a useful bot t
 ### TODO
 - [x] Make it work!
 - [x] Upgrade database structure
-- [ ] Create view in database
+- [x] Create view in database
 - [ ] Include Unit test
 - [ ] Review server structure
 - [ ] Add Regex for security
