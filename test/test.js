@@ -12,11 +12,10 @@ client.login(token);
 client.on('ready', () => {
 	//confirm login
 	console.log("MOISTY:200");
-
-	//Assert
-	console.log(moduleManager.sqlString("te--st -- /**/ *"));
 	
-	//assert.deepEqual(moduleManager.getSafeSqlString("--s*am/p'le te/*xt*/"), "sample test");
+	//Assert
+
+	//assert.deepEqual(moduleManager.sqlString("sample text"), "");
 
 	//terminate the session
 	process.exit();
