@@ -10,6 +10,7 @@ console.log("MAKE SURE MOISTY IS OFFLINE!");
 
 //init sql setup
 moduleManager.sql.connect();
+console.log("SQL connected!");
 
 //make a query in database
 moduleManager.sql.connection.query("select * from CLIENT", function(err, result){ //made this way to avoid async errors
@@ -19,17 +20,16 @@ moduleManager.sql.connection.query("select * from CLIENT", function(err, result)
 
 	//assert database
 	assert.deepEqual(result[0].EMAIL, "JohnDoe@mail.com");
+});
 	
-	
-	//login on discord service
-	client.login(token);
-	client.on('ready', () => {
+//login on discord service
+client.login(token);
 
-	
-		//confirm login
-		console.log("MOISTY:200");
-	
-		//terminate the session
-		process.exit();
-	});
+client.on('ready', () => {
+
+	//confirm login
+	console.log("MOISTY:200");
+
+	//terminate the session
+	process.exit();
 });
