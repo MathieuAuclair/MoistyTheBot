@@ -12,32 +12,24 @@ console.log("MAKE SURE MOISTY IS OFFLINE!");
 moduleManager.sql.connect();
 
 //make a query in database
-moduleManager.sql.connection.query("select * from CLIENT", function(err, result){
+moduleManager.sql.connection.query("select * from CLIENT", function(err, result){ //made this way to avoid async errors
 	if(err){
 		throw err;
 	}
 
 	//assert database
 	assert.deepEqual(result[0].EMAIL, "JohnDoe@mail.com");
+	
+	
+	//login on discord service
+	client.login(token);
+	client.on('ready', () => {
+
+	
+		//confirm login
+		console.log("MOISTY:200");
+	
+		//terminate the session
+		process.exit();
+	});
 });
-
-
-
-client.login(token);
-
-client.on('ready', () => {
-
-
-	//confirm login
-	console.log("MOISTY:200");
-
-	//Assert
-	//assert.deepEqual(moduleManager.sqlString("sample text"), "");
-
-	//terminate the session
-	process.exit();
-});
-
-
-
-
