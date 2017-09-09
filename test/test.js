@@ -10,7 +10,6 @@ console.log("MAKE SURE MOISTY IS OFFLINE!");
 
 //init sql setup
 moduleManager.sql.connect();
-console.log("SQL connected!");
 
 //make a query in database
 moduleManager.sql.connection.query("select * from CLIENT", function(err, result, next){ 

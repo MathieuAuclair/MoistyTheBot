@@ -10,7 +10,12 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-	msg.reply("sorry server are not available!");
+	var isMsgFromUser = msg.author.username != client.user.username;
+	var isMsgForMoisty = msg.content.indexOf(".m status") != -1;
+
+	if(isMsgFromUser && isMsgForMoisty) {
+		msg.reply("sorry server are not available!");
+	}
 });
 
 client.login(token);
