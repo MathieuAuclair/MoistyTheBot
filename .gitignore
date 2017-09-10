@@ -3,6 +3,7 @@
 
 # vim
 *.swp
+*.swo
 
 #NPM
 anonymous-cli-metrics.json

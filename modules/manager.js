@@ -4,12 +4,8 @@
 */ 
 
 function Manager(){
-	this.init = function(){
-		//init sql setup
-		this.sql.connect();
-		console.log(this.sql.makeRequest("getClient", "Joe"));
-	},
 	this.sql = require("./sqlSetup.js")
+
 }
 
 module.exports = new Manager();
