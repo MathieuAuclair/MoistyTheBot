@@ -1,5 +1,5 @@
 # password file
-*.env
+.env
 
 # vim
 *.swp

@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  db:
+    image: mysql:latest
+    env_file:
+      - .env
+  moistythebot:
+    build: .
+    links:
+      - db
+    env_file:
+      - .env
