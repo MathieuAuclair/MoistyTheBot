@@ -1,6 +1,8 @@
 require("dotenv").config();
+console.log("MAKE SURE ENV VARIABLES ARE SETS " + process.env.MYSQL_USER);
 const mysql = require('mysql');
 var pool;
+
 
 module.exports = {
     getPool: function () {
