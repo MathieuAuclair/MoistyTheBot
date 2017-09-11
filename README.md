@@ -1,6 +1,6 @@
 # Discord-Bot
 
-[![Build Status](https://travis-ci.org/MathieuAuclair/MoistyTheBot.svg)](https://travis-ci.org/MathieuAuclair/MoistyTheBot)
+[![Build Status](https://travis-ci.org/MathieuAuclair/MoistyTheBot.svg?branch=master)](https://travis-ci.org/MathieuAuclair/MoistyTheBot)
 
 This project is a trial of using [discord.js API](https://discord.js.org/#/). I want to create a useful bot that can really help with server management and include special features to improve discord usage.
 
@@ -10,14 +10,19 @@ This project is a trial of using [discord.js API](https://discord.js.org/#/). I 
 - [x] Make it work!
 - [x] Upgrade database structure
 - [x] Create view in database
-- [ ] Include Unit test
-- [ ] Review server structure
-- [ ] Add Regex for security
+- [x] Include Unit test
+- [x] Review server structure
+- [x] Add Regex for security
+- [ ] Set an authentification system
+- [ ] Create management GUI
+- [ ] Include a currency system
+- [ ] Activate commands module
 - [ ] Try remove security leak
 
 
 ## TODO Later
 
+- [ ] Create currency API for all plateform
 - [ ] Add a deep learning
 - [ ] Add new features!
 
