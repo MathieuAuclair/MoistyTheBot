@@ -1,10 +1,12 @@
+# Discord-Bot
+
 [![Build Status](https://travis-ci.org/MathieuAuclair/MoistyTheBot.svg)](https://travis-ci.org/MathieuAuclair/MoistyTheBot)
 
-## Discord-Bot
-this project is a trial of using discord.js API, I want to create a useful bot that can really help with server management, and include special feature to improve discord use.
+This project is a trial of using [discord.js API](https://discord.js.org/#/). I want to create a useful bot that can really help with server management and include special features to improve discord usage.
 
 
-### TODO
+# TODO
+
 - [x] Make it work!
 - [x] Upgrade database structure
 - [x] Create view in database
@@ -14,48 +16,58 @@ this project is a trial of using discord.js API, I want to create a useful bot t
 - [ ] Try remove security leak
 
 
-### SECONDARY
+## TODO Later
+
 - [ ] Add a deep learning
 - [ ] Add new features!
 
-#### HELP
-if you're interrested to help in this project, just send me a message by email, and i'll add you to the project! 
+
+## Contribute
+
+If you're interested to help in this project, just send me a message by email, and I'll add you to the project! Feel free to send Pull-requests 
 
 
+## Usage
 
+### Discord requirements
 
+1. Create yourself a bot at https://discordapp.com/developers/applications/me
+2. Manage you bot permission with bot ID at https://discordapi.com/permissions.html
+3. Invite the bot in a server that you are manager
 
-### PRE-INSTALL
-1- create yourself a bot at https://discordapp.com/developers/applications/me
+### Run locally
 
-2- manage you bot permission with bot ID at https://discordapi.com/permissions.html
-
-3- invite the bot in a server that you are manager
-
-### INSTALL (LOCALHOST)
-~~~
+```bash
 # get in the project directory and open your terminal
-$ npm install
-$ mysql -u root -p 
-$ source database.sql
-$ exit
-$ node server.js
-~~~
-then the bot should be online as long as the nodejs server is running, (note) it's really important to hide you bot token or someone could mess with you discord server by using the bot on his own nodejs server
+npm install
+cat database.sql | mysql -u root -p
+node server.js
+```
+
+then the bot should be online as long as the nodejs server is running, (note) it's really important to hide your bot token or someone could mess with you discord server by using the bot on his own nodejs server
+
+### Run with `docker-compose`
+
+```bash
+docker-compose up -d
+```
+
+### Invite my bot (nothing required)
+
+Client ID: `321041087689129994`
+
+Manage bot permission then invite the bot in your server at https://discordapi.com/permissions.html
+
+#### Notes
+
+* _You must be server manager to be able to invite bot_
+* _My bot is not always online since it's currently in development_
 
 
-
-
-### INVITE MY BOT (NO INSTALLATION)
-Client ID: 321041087689129994
-
-manage bot permission then invite the bot in your server at https://discordapi.com/permissions.html
-
-(note) you must be server manager to be able to invite bot
-
-(important) my bot is not always online since it's currently in developpement
-
-
-### Work in progress
+### Support this project
 
 https://www.patreon.com/MoistyTheBot
+
+## License
+
+[Apache License v2](LICENSE) © [Mathieu Auclair](https://github.com/MathieuAuclair/)
