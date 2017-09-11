@@ -1,19 +1,34 @@
-require("dotenv").config();
-const mysql = require("mysql");
+const sqlstring = require("sqlstring");
+const pool = require("./sqlPool.js");
+var connection = pool.getPool();
 
 function setup(){
-	this.connection = mysql.createConnection({
-		host: process.env.MYSQL_HOST,
-		user: process.env.MYSQL_USER,
-		password : process.env.MYSQL_PASSWORD,
-		database : process.env.MYSQL_DATABASE
-	}),
-	this.connect = function(){
-		this.connection.connect(function(err){
-			if(err){
-				throw err;
+	this.makeRequest = function(requestName, param, callBack){
+		var secureParam;
+		if(param == null){
+			secureParam = "";
+		} else{
+			secureParam = this.formatString(param);
+		}
+		var secureRequestName = this.formatString(requestName);
+		connection.getConnection(function(connectionErr, conn){
+			if(connectionErr){
+				throw connectionErr;
 			}
+			connection.query("SELECT SQLQUERY FROM QUERYLIST WHERE NAME = " + secureRequestName,function(err, res){
+				if(err){
+					throw err;
+				} else{
+					connection.query(res[0].SQLQUERY + secureParam, function(error, result){
+						callBack(result);
+						return;
+					});
+				}
+			});
 		});
+	},
+	this.formatString = function(string){
+		return sqlstring.escape(string);	
 	}
 }
 

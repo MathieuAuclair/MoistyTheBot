@@ -3,9 +3,11 @@
 
 # vim
 *.swp
+*.swo
 
 #NPM
 anonymous-cli-metrics.json
 package-lock.json
 _cacache
 _locks
+_logs

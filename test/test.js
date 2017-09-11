@@ -5,17 +5,16 @@ const token = process.env.MOISTY;
 const moduleManager = require("../modules/manager.js");
 const assert = require("assert");
 
+//set a reminder for the log 
 console.log("MAKE SURE MOISTY IS OFFLINE!");
 
-
-//init sql setup
-moduleManager.sql.connect();
-
-//make a query in database
-moduleManager.sql.connection.query("select * from CLIENT", function(err, result, next){ 
-
-	//assert database
+// sql assert
+moduleManager.sql.makeRequest("getClient","JohnDoe@mail.com",function(result){
 	assert.deepEqual(result[0].EMAIL, "JohnDoe@mail.com");
+});
+
+moduleManager.sql.makeRequest("getLeaderboard", null, function(result){
+	assert.notDeepEqual(result, undefined);
 });
 
 //login on discord service
