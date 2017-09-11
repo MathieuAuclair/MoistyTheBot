@@ -8,8 +8,14 @@ const assert = require("assert");
 //set a reminder for the log 
 console.log("MAKE SURE MOISTY IS OFFLINE!");
 
-//assert
-assert.deepEqual(moduleManager.sql.makeRequest("getClient","JohnDoe@mail.com")[0].EMAIL, "JohnDoe@mail.com");
+// sql assert
+moduleManager.sql.makeRequest("getClient","JohnDoe@mail.com",function(result){
+	assert.deepEqual(result[0].EMAIL, "JohnDoe@mail.com");
+});
+
+moduleManager.sql.makeRequest("getLeaderboard", null, function(result){
+	assert.notDeepEqual(result, undefined);
+});
 
 //login on discord service
 client.login(token);
