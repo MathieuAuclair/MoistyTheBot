@@ -17,7 +17,7 @@ This project is a trial of using [discord.js API](https://discord.js.org/#/). I 
 - [ ] Create management GUI
 - [ ] Include a currency system
 - [ ] Activate commands module
-- [ ] Try remove security leak
+- [ ] Try to remove security leaks
 
 
 ## TODO Later
@@ -29,7 +29,7 @@ This project is a trial of using [discord.js API](https://discord.js.org/#/). I 
 
 ## Contribute
 
-If you're interested to help in this project, just send me a message by email, and I'll add you to the project! Feel free to send Pull-requests 
+If you're interested to help in this project, just send me a message by email, and I'll add you to the project! Feel free to send Pull-requests .
 
 
 ## Usage
@@ -37,8 +37,8 @@ If you're interested to help in this project, just send me a message by email, a
 ### Discord requirements
 
 1. Create yourself a bot at https://discordapp.com/developers/applications/me
-2. Manage you bot permission with bot ID at https://discordapi.com/permissions.html
-3. Invite the bot in a server that you are manager
+2. Manage your bot permissions with bot ID at https://discordapi.com/permissions.html
+3. Invite the bot in a server where you are manager
 
 ### Run locally
 
@@ -49,7 +49,7 @@ cat database.sql | mysql -u root -p
 node server.js
 ```
 
-then the bot should be online as long as the nodejs server is running, (note) it's really important to hide your bot token or someone could mess with you discord server by using the bot on his own nodejs server
+then the bot should be online as long as the nodejs server is running, (note) it's really important to hide your bot token or someone could mess with your discord server by using the bot on his own nodejs server.
 
 ### Run with `docker-compose`
 
@@ -61,11 +61,11 @@ docker-compose up -d
 
 Client ID: `321041087689129994`
 
-Manage bot permission then invite the bot in your server at https://discordapi.com/permissions.html
+Manage bot permissions then invite it to your server at https://discordapi.com/permissions.html
 
 #### Notes
 
-* _You must be server manager to be able to invite bot_
+* _You must be server manager to be able to invite a bot_
 * _My bot is not always online since it's currently in development_
 
 
