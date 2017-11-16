@@ -4,8 +4,8 @@
 */ 
 
 function Manager(){
-	this.sql = require("./sqlSetup.js")
-
+	this.postman = require("./sqlRequest.js"),
+    this.webProxy = require("./webProxy.js")
 }
 
 module.exports = new Manager();
