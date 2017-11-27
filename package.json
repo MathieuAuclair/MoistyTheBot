@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "test/test.js",
+    "test": "node test/test.js",
     "build": "npm install",
     "start": "node server.js"
   },
@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/MathieuAuclair/discord-bot/issues"
   },
-  "homepage": "https://github.com/MathieuAuclair/discord-bot#readme"
+  "homepage": "https://github.com/MathieuAuclair/discord-bot#readme",
+  "directories": {
+    "test": "test"
+  }
 }

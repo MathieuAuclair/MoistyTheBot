@@ -35,5 +35,3 @@ client.on('ready', () => {
 	console.log("MOISTY:200");
 	process.exit();
 });
-
-
